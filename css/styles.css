@@ -72,7 +72,7 @@ h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 72px;
+  font-size: 5rem;
   text-transform: uppercase;
   margin-top: -100px;
   margin-bottom: 0;
@@ -82,7 +82,7 @@ h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 a {
@@ -128,15 +128,14 @@ div#mobile > img:last-child {
   top: 40px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   h1 {
-    font-size: 26px;
   }
   h2 {
-    font-size: 48px;
+    font-size: 3rem;
   }
   h3 {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   div#mobile > img:first-child {
@@ -151,6 +150,14 @@ div#mobile > img:last-child {
 }
 
 @media (max-width: 730px) {
+  html {
+    height: auto;
+  }
+
+  body {
+    padding: 15px;
+  }
+
   div#content {
     flex-direction: column;
   }
@@ -163,6 +170,4 @@ div#mobile > img:last-child {
     margin-top: 20px;
     width: 400px;
   }
-
-
 }
