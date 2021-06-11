@@ -13,8 +13,13 @@ html {
       rgba(255, 255, 255, 0) 100%
     ),
     #38b44e;
-
   background-image: url("../img/bg-chart.png");
+  background-image: url("../img/bg-chart.png"),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
   background-repeat: no-repeat;
   background-position: 120% 30%;
   background-attachment: fixed;
