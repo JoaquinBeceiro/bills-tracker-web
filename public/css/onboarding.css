@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: roboto;
+}
+
+header {
+  background-color: #38b44e;
+  color: white;
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+  z-index: 0;
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  font-size: 5rem;
+  z-index: 2;
+}
+
+.chart {
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+}
+
+nav {
+  height: 100px;
+  padding-left: 100px;
+  padding-top: 10px;
+  background-color: #38b44e;
+  font-size: 2.5rem;
+  font-family: roboto;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav img {
+  margin-right: 10px;
+}
+
+p {
+  display: inline;
+}
+
+@media screen and (min-width: 480px) {
+  .chart {
+    position: absolute;
+    top: -50px;
+    left: 270px;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  .chart {
+    position: absolute;
+    top: -50px;
+    left: 80px;
+  }
+}
+
+@media screen and (min-width: 1138px) {
+  .chart {
+    position: absolute;
+    top: -50px;
+    left: 320px;
+  }
+}
