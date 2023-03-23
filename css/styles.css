@@ -319,6 +319,7 @@ div#mobile>img:last-child {
     font-weight: 700;
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
 }
 
 .about-content .description p.join-the-team a:hover {
@@ -330,7 +331,7 @@ div#mobile>img:last-child {
 }
 
 .about-content .description p.join-the-team a::before {
-    content: ' ';
+    content: '';
     border-bottom: 3px solid #4CE2AD;
     width: 110%;
     position: absolute;
