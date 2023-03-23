@@ -252,6 +252,7 @@ div#mobile>img:last-child {
     background-repeat: no-repeat;
     background-position: 100% 90%;
     padding-bottom: 55px;
+    margin-bottom: -100px;
 }
 
 
@@ -265,8 +266,6 @@ div#mobile>img:last-child {
     background-image: url("../img/about-bg.svg");
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 500px;
-    top: -100px;
     position: relative;
     padding: 100px 0;
     height: 100%;
@@ -379,6 +378,9 @@ div#mobile>img:last-child {
 #contact {
     background-image: url('/img/map.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 300px;
+    margin-bottom: -300px;
 }
 
 #contact>div.form-container {
@@ -571,7 +573,6 @@ div#mobile>img:last-child {
 
 #onboarding {
     background-color: #fff;
-    height: 300px
 }
 
 /* ./ONBOARDING */
@@ -586,8 +587,7 @@ div#mobile>img:last-child {
 }
 
 #footer .footer-top {
-    height: 129px;
-    background-color: #fff;
+    height: 127px;
     overflow: hidden;
 }
 
