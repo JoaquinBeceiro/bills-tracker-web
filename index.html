@@ -1,160 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bills Tracker App</title>
 
     <meta name="title" content="Bills Tracker App" />
-    <meta name="description" content="Track and share expenses with Google Drive spreadsheet." />
+    <meta
+      name="description"
+      content="Track and share expenses with Google Drive spreadsheet."
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://billstracker.app/" />
     <meta property="og:title" content="Bills Tracker App" />
-    <meta property="og:description" content="Track and share expenses with Google Drive spreadsheet." />
-    <meta property="og:image" content="https://billstracker.app/img/social.png" />
+    <meta
+      property="og:description"
+      content="Track and share expenses with Google Drive spreadsheet."
+    />
+    <meta
+      property="og:image"
+      content="https://billstracker.app/img/social.png"
+    />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://billstracker.app/" />
     <meta property="twitter:title" content="Bills Tracker App" />
-    <meta property="twitter:description" content="Track and share expenses with Google Drive spreadsheet." />
-    <meta property="twitter:image" content="https://billstracker.app/img/social.png" />
+    <meta
+      property="twitter:description"
+      content="Track and share expenses with Google Drive spreadsheet."
+    />
+    <meta
+      property="twitter:image"
+      content="https://billstracker.app/img/social.png"
+    />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/icons/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/img/icons/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/icons/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/img/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/img/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/img/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/img/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/img/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/img/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/img/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/img/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/img/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/icons/favicon-16x16.png"
+    />
     <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/icons/ms-icon-144x144.png"
+    />
     <meta name="theme-color" content="#ffffff" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="main">
-        <div id="home">
-            <div class="nav">
-                <h1>
-                    <img src="img/logo.svg" alt="logo" /> Bills Tracker
-                </h1>
-                <ul class="links">
-                    <li><a href="#how-it-works" class="link">How it works</a></li>
-                    <li><a href="#" class="link">About Project</a></li>
-                    <li><a href="#" class="link">Contact</a></li>
-                    <li><a href="#" class="link">Onboarding</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <div id="description">
-                    <h2>Take control of your bills</h2>
-                    <h3>
-                        Track and share expenses with Google Drive spreadsheet.
-                        <div class="buttons-container">
-                            <a href="https://github.com/JoaquinBeceiro/bills-tracker" target="_blank" class="button primary">
-                                <img src="img/logo.svg" alt="" />
-                                <span>Go to <strong>App webpage</strong></span>
-                            </a>
-                            <a href="https://github.com/JoaquinBeceiro/bills-tracker" target="_blank" class="button secondary">
-                                <img src="img/github.svg" alt="" />
-                                <span>Go to <strong>GitHub project</strong></span>
-                            </a>
-                        </div>
-                    </h3>
-                </div>
+      <div id="home">
+        <div class="nav">
+          <h1><img src="img/logo.svg" alt="logo" /> Bills Tracker</h1>
+          <ul class="links">
+            <li><a href="#how-it-works" class="link">How it works</a></li>
+            <li><a href="#" class="link">About Project</a></li>
+            <li><a href="#" class="link">Contact</a></li>
+            <li><a href="#" class="link">Onboarding</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div id="description">
+            <h2>Take control of your bills</h2>
+            <h3>
+              Track and share expenses with Google Drive spreadsheet.
+              <div class="buttons-container">
+                <a
+                  href="https://github.com/JoaquinBeceiro/bills-tracker"
+                  target="_blank"
+                  class="button primary"
+                >
+                  <img src="img/logo.svg" alt="" />
+                  <span>Go to <strong>App webpage</strong></span>
+                </a>
+                <a
+                  href="https://github.com/JoaquinBeceiro/bills-tracker"
+                  target="_blank"
+                  class="button secondary"
+                >
+                  <img src="img/github.svg" alt="" />
+                  <span>Go to <strong>GitHub project</strong></span>
+                </a>
+              </div>
+            </h3>
+          </div>
 
-                <div id="mobile">
-                    <img src="img/phone-types.png" alt="" />
-                    <img src="img/phone-home.png" alt="" />
-                </div>
-            </div>
+          <div id="mobile">
+            <img src="img/phone-types.png" alt="" />
+            <img src="img/phone-home.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="how-it-works">
+        <div class="title-container">
+          <h2>How it works</h2>
+          <h3>We make it easy, in 3 simple steps</h3>
         </div>
 
-        <div id="how-it-works">
-
-            <div class="title-container">
-                <h2>How it works</h2>
-                <h3>We make it easy, in 3 simple steps</h3>
+        <ul class="cards-container">
+          <li class="card">
+            <div class="card-header">
+              <img src="img/icons/credential.svg" alt="" />
+              <img src="img/icons/right-arrow.svg" alt="" />
             </div>
+            <div class="card-content">
+              <h3>Onboarding</h3>
+              <p>
+                Create Google credentials and conect the App to your SpreadSheet
+              </p>
+              <div class="card-footer">STEP 1</div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-header">
+              <img src="img/icons/money.svg" alt="" />
+              <img src="img/icons/right-arrow.svg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Add a bill</h3>
+              <p>Create a new bill filling the blanks on the home page</p>
+              <div class="card-footer">STEP 2</div>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-header">
+              <img src="img/icons/chart.svg" alt="" />
+              <img src="img/icons/right-arrow.svg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Take the control!</h3>
+              <p>
+                Your bill is saved in the Spreadsheet and you can use al the
+                charts on the App!
+              </p>
+              <div class="card-footer">STEP 3</div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="cards-container">
-                <li class="card">
-                    <div class="card-header">
-                        <img src="img/icons/credential.svg" alt="">
-                        <img src="img/icons/right-arrow.svg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3>Onboarding</h3>
-                        <p>Create Google credentials and conect the App to your SpreadSheet</p>
-                        <div class="card-footer">STEP 1</div>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card-header">
-                        <img src="img/icons/money.svg" alt="">
-                        <img src="img/icons/right-arrow.svg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3>Add a bill</h3>
-                        <p>Create a new bill filling the blanks on the home page</p>
-                        <div class="card-footer">STEP 2</div>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card-header">
-                        <img src="img/icons/chart.svg" alt="">
-                        <img src="img/icons/right-arrow.svg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3>Take the control!</h3>
-                        <p>Your bill is saved in the Spreadsheet and you can use al the charts on the App!</p>
-                        <div class="card-footer">STEP 3</div>
-                    </div>
-                </li>
-            </ul>
-
+      <div id="about-project">
+        <div class="title-container title-container-white">
+          <h2>About Project</h2>
+          <h3>Colavorative, Open Source & Free</h3>
         </div>
 
-
-        <div id="about-project">
-            <div class="title-container title-container-white">
-                <h2>About Project</h2>
-                <h3>Colavorative, Open Source & Free</h3>
+        <div class="about-content">
+          <div><img src="/img/logo.svg" /></div>
+          <div class="description">
+            <div>
+              <p>
+                <strong>Bills Tracker</strong> arises from the need to have an
+                expense control where the only owner of the data is the final
+                user, without third parties involved.
+              </p>
+              <p><strong>We love to hear your feedback.</strong></p>
             </div>
-
-            <div class="about-content">
-                <div> <img src="/img/logo.svg"> </div>
-                <div class="description">
-                   <div>
-                    <p><strong>Bills Tracker</strong> arises from the need to have an expense control where the only owner of the data is the final user, without third parties involved.</p>
-                    <p><strong>We love to hear your feedback.</strong></p>
-                   </div>
-                   <p class="join-the-team">If you like the project, <a href="#">join the team!</a></p>
-                </div>
-            </div>
-
+            <p class="join-the-team">
+              If you like the project, <a href="#">join the team!</a>
+            </p>
+          </div>
         </div>
-
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
