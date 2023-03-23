@@ -124,6 +124,7 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
@@ -253,12 +254,16 @@
         </div>
 
         <div class="form-container">
-          <form>
+          <form action="https://formspree.io/f/mayeerpo" method="post">
             <h3>Let's talk!</h3>
-
             <div class="input-container">
               <label for="form-full-name">Full name*</label>
-              <input type="text" id="form-full-name" placeholder="John Doe" />
+              <input
+                type="text"
+                id="form-full-name"
+                placeholder="John Doe"
+                required
+              />
             </div>
 
             <div class="input-container">
@@ -267,6 +272,7 @@
                 type="text"
                 id="form-email"
                 placeholder="johndoe@billstracker.app"
+                required
               />
             </div>
 
@@ -277,7 +283,10 @@
                 placeholder="Your message here"
               ></textarea>
             </div>
-
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LfQOiclAAAAAClCZOMBaMUvZheJmBYDUP_5sX8S"
+            ></div>
             <button type="submit">Send</button>
           </form>
         </div>
