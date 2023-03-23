@@ -579,14 +579,22 @@ div#mobile>img:last-child {
 /* FOOTER */
 
 #footer {
-    background-color: #fff;
-    background-image: url('/img/footer-bg.svg');
-    background-repeat: no-repeat;
-    background-position: top;
-    padding: 130px 0 0 0;
+    padding: 0;
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 16px;
+}
+
+#footer .footer-top {
+    height: 129px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#footer .footer-top img {
+    width: 100%;
+    margin: 0;
+    height: 130px;
 }
 
 #footer>.footer-container {
@@ -596,6 +604,7 @@ div#mobile>img:last-child {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+    z-index: 100;
 }
 
 #footer>.footer-container h3 {
