@@ -14,6 +14,7 @@ async function handleSubmit(event) {
     .then((response) => {
       if (response.ok) {
         status.innerHTML = "Thanks for your message!";
+        status.className = "success";
         form.reset();
       } else {
         response.json().then((data) => {
@@ -23,12 +24,14 @@ async function handleSubmit(event) {
               .join(", ");
           } else {
             status.innerHTML = "Oops! There was a problem submitting your form";
+            status.className = "error";
           }
         });
       }
     })
     .catch((error) => {
       status.innerHTML = "Oops! There was a problem submitting your form";
+      status.className = "error";
     });
 }
 form.addEventListener("submit", handleSubmit);

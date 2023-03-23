@@ -459,7 +459,6 @@ div#mobile>img:last-child {
     height: 60px;
     color: #fff;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -481,6 +480,22 @@ div#mobile>img:last-child {
         width: 85%;
     }
 
+}
+
+#form-status {
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+    color: #333;
+}
+
+#form-status.success {
+    color: #38B44E;
+}
+
+#form-status.error {
+    color: #F7946D;
 }
 
 /* ./ACONTACT */
