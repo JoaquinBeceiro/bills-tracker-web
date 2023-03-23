@@ -9,6 +9,7 @@ body {
 }
 
 html {
+    scroll-behavior: smooth;
     background-color: #38b44e;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #38b44e;
     background-image: url("../img/bg-chart.png");
