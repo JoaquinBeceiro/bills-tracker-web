@@ -625,11 +625,20 @@ div#mobile>img:last-child {
     margin-bottom: 30px;
 }
 
-.footer-links {
+#footer .footer-links {
     margin-top: 20px;
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #footer>.footer-container {
+        /* padding: 0 60px 60px 60px; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+        gap: 0px;
+    }
 }
 
 /* ./FOOTER */
