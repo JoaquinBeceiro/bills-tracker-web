@@ -202,6 +202,12 @@ div#mobile>img {
     max-width: 450px;
 }
 
+@media (max-width: 768px) {
+    div#mobile>img {
+        width: 60%;
+    }
+}
+
 div#mobile>img:first-child {
     right: -60px;
     top: -80px;
@@ -264,15 +270,28 @@ div#mobile>img:last-child {
     position: relative;
     padding: 100px 0;
     height: 100%;
+    background-size: cover;
 }
 
 .about-content {
     display: flex;
     padding: 0 150px;
+    padding-top: 10px;
+}
+
+.about-content>div:first-child {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.about-content>div:last-child {
+    flex: 2;
 }
 
 .about-content img {
-    height: 350px;
+    max-width: 305px;
+    width: 100%;
 }
 
 .about-content .description {
@@ -292,6 +311,7 @@ div#mobile>img:last-child {
 
 .about-content .description p.join-the-team {
     font-weight: 400;
+    margin-top: 40px;
 }
 
 .about-content .description p.join-the-team a {
@@ -319,8 +339,36 @@ div#mobile>img:last-child {
     rotate: -1deg;
 }
 
+@media (max-width: 992px) {
 
+    #about-project {
+        padding: 20px 0 50px 0;
+    }
 
+    .about-content .description p {
+        margin-bottom: 20px;
+    }
+
+    .about-content .description p.join-the-team {
+        margin-top: 40px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .about-content .description {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .about-content img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
+}
 
 
 /* ./ABOUT PROJECT */
