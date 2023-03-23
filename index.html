@@ -254,7 +254,11 @@
         </div>
 
         <div class="form-container">
-          <form action="https://formspree.io/f/mayeerpo" method="post">
+          <form
+            action="https://formspree.io/f/mayeerpo"
+            method="post"
+            id="#contact-form"
+          >
             <h3>Let's talk!</h3>
             <div class="input-container">
               <label for="form-full-name">Full name*</label>
@@ -289,6 +293,7 @@
               data-sitekey="6LfQOiclAAAAAClCZOMBaMUvZheJmBYDUP_5sX8S"
             ></div>
             <button type="submit">Send</button>
+            <span id="form-status"></span>
           </form>
         </div>
       </div>
@@ -338,5 +343,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
