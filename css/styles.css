@@ -634,8 +634,6 @@ div#mobile>img:last-child {
 
 @media (max-width: 768px) {
     #footer>.footer-container {
-        /* padding: 0 60px 60px 60px; */
-        /* justify-content: space-between; */
         flex-direction: column;
         gap: 0px;
     }
