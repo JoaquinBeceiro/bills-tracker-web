@@ -121,7 +121,12 @@ div#description {
 
 div#mobile {
     flex: 1;
+    display: flex;
+}
+
+div#mobile>div {
     position: relative;
+    flex: 1;
 }
 
 #home h2 {
@@ -196,25 +201,25 @@ a.button>img {
 
 /* ./BUTTON */
 
-div#mobile>img {
+div#mobile img {
     width: 70%;
     position: absolute;
     max-width: 450px;
 }
 
 @media (max-width: 768px) {
-    div#mobile>img {
+    div#mobile>div>img {
         width: 60%;
     }
 }
 
-div#mobile>img:first-child {
+div#mobile>div>img:first-child {
     right: -60px;
-    top: -80px;
+    top: -50px;
 }
 
-div#mobile>img:last-child {
-    right: 100px;
+div#mobile>div>img:last-child {
+    right: 45px;
     top: 20px;
 }
 
@@ -677,12 +682,17 @@ div#mobile>img:last-child {
     }
 
     div#home {
-        padding: 15px
+        padding: 0;
     }
 
+
     .nav {
-        padding: 15px;
+        padding: 30px;
         margin-bottom: 10px;
+    }
+
+    #description {
+        padding: 30px;
     }
 
     .nav>ul.links {
@@ -701,12 +711,12 @@ div#mobile>img:last-child {
         font-size: 1.2rem;
     }
 
-    div#mobile>img:first-child {
+    div#mobile>div>img:first-child {
         right: 0;
         top: 0;
     }
 
-    div#mobile>img:last-child {
+    div#mobile>div>img:last-child {
         right: 70px;
         top: 80px;
     }
@@ -717,12 +727,14 @@ div#mobile>img:last-child {
         flex-direction: column;
     }
 
-    div#mobile {
-        min-height: 115vw;
+    div#mobile>div {
+        overflow: hidden;
     }
 
     div#description {
         align-items: flex-start;
+        padding: 10px 30px;
+        flex: none;
     }
 
     #home h2 {
