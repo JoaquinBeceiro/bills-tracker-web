@@ -347,7 +347,7 @@ div#mobile>div>img:last-child {
 @media (max-width: 992px) {
 
     #about-project {
-        padding: 20px 0 50px 0;
+        padding: 20px 30px 50px 30px;
     }
 
     .about-content .description p {
@@ -483,6 +483,7 @@ div#mobile>div>img:last-child {
     #contact form {
         padding: 30px;
         width: 85%;
+        margin: 0;
     }
 
 }
@@ -685,6 +686,10 @@ div#mobile>div>img:last-child {
         padding: 0;
     }
 
+    div#contact .form-container {
+        display: flex;
+        justify-content: center;
+    }
 
     .nav {
         padding: 30px;
