@@ -522,7 +522,7 @@ div#mobile>div>img:last-child {
 
 .cards-container .card {
     width: 260px;
-    height: 250px;
+    min-height: 250px;
     background: #FFFFFF;
     border-radius: 15px;
     padding: 22px 22px 14px 22px;
