@@ -390,8 +390,6 @@ div#mobile>div>img:last-child {
     background-image: url('/img/map.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 300px;
-    margin-bottom: -300px;
 }
 
 #contact>div.form-container {
@@ -600,6 +598,82 @@ div#mobile>div>img:last-child {
 
 #onboarding {
     background-color: #fff;
+    padding-bottom: 300px;
+    margin-bottom: -300px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+}
+
+.steps-container ul {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.steps-container ul>li {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.steps-container ul>li:before {
+    top: 50%;
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 1px;
+    background-color: #333;
+    left: 72px;
+    z-index: 1;
+}
+
+.steps-container ul>li:after {
+    top: 50%;
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 1px;
+    background-color: #333;
+    right: 72px;
+    z-index: 1;
+}
+
+.steps-container ul>li.active:before {
+    background-color: #38B44E;
+}
+
+.steps-container ul>li.active:after {
+    background-color: #38B44E;
+}
+
+
+.steps-container ul>li:last-child:before {
+    display: none;
+}
+
+.steps-container ul>li:first-child:after {
+    display: none;
+}
+
+
+.steps-container ul>li.active {
+    background-color: #38B44E;
+    color: #fff
 }
 
 /* ./ONBOARDING */
