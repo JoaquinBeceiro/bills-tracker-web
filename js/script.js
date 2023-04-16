@@ -3,6 +3,14 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      isMenuOpen: false,
+      toggleMenu: function (fromMenu = false) {
+        if (fromMenu) {
+          this.isMenuOpen = false;
+        } else {
+          this.isMenuOpen = !this.isMenuOpen;
+        }
+      },
       activeStep: 1,
       setStep: function (step) {
         if (this.activeOs !== null) {
@@ -22,4 +30,4 @@ createApp({
       },
     };
   },
-}).mount("#onboarding");
+}).mount("#main");

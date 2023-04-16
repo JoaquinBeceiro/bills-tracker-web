@@ -146,12 +146,43 @@
     <div id="main">
       <div id="home">
         <div class="nav">
-          <h1><img src="img/logo.svg" alt="logo" /> Bills Tracker</h1>
-          <ul class="links">
-            <li><a href="#how-it-works" class="link">How it works</a></li>
-            <li><a href="#about-project" class="link">About Project</a></li>
-            <li><a href="#contact" class="link">Contact</a></li>
-            <li><a href="#onboarding" class="link">Onboarding</a></li>
+          <div>
+            <h1><img src="img/logo.svg" alt="logo" /> Bills Tracker</h1>
+            <div
+              v-on:click="toggleMenu()"
+              id="hamb-menu"
+              :class="{ open:isMenuOpen }"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="links" :class="{ open:isMenuOpen }">
+            <li>
+              <a v-on:click="toggleMenu(true)" href="#how-it-works" class="link"
+                >How it works</a
+              >
+            </li>
+            <li>
+              <a
+                v-on:click="toggleMenu(true)"
+                href="#about-project"
+                class="link"
+                >About Project</a
+              >
+            </li>
+            <li>
+              <a v-on:click="toggleMenu(true)" href="#contact" class="link"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a v-on:click="toggleMenu(true)" href="#onboarding" class="link"
+                >Onboarding</a
+              >
+            </li>
           </ul>
         </div>
         <div class="content">
