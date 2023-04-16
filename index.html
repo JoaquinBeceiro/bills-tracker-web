@@ -151,7 +151,7 @@
             <li><a href="#how-it-works" class="link">How it works</a></li>
             <li><a href="#about-project" class="link">About Project</a></li>
             <li><a href="#contact" class="link">Contact</a></li>
-            <li><a href="#" class="link">Onboarding</a></li>
+            <li><a href="#onboarding" class="link">Onboarding</a></li>
           </ul>
         </div>
         <div class="content">
@@ -342,7 +342,7 @@
               <div class="title-container">
                 <h2>Select your OS</h2>
               </div>
-              <div>
+              <div class="os-cards-container">
                 <div
                   v-on:click="setActiveOs('android')"
                   :class="{ active:activeOs == 'android' }"
@@ -401,8 +401,78 @@
                 </div>
               </div>
             </div>
-            <div v-show="activeStep == 2">Step 2</div>
-            <div v-show="activeStep == 3">Step 3</div>
+            <div class="step-2-container" v-show="activeStep == 2">
+              <div v-show="activeOs =='ios'">
+                <div class="title-container">
+                  <h2>iOS Setup</h2>
+                </div>
+                <p>
+                  Open the site on <strong>Safari</strong>, click on the
+                  <strong>Share</strong> <img src="./img/share.png" /> button
+                  and select <strong>“Add to Home Screen”</strong> from the
+                  popup. Lastly, tap "Add" <img src="./img/add.png" /> in the
+                  top right corner.
+                </p>
+                <img
+                  class="img-onboarding"
+                  src="./img/ios-onboarding.png"
+                  alt="ios onboarding"
+                />
+              </div>
+            </div>
+
+            <div class="step-2-container" v-show="activeStep == 2">
+              <div v-show="activeOs =='android'">
+                <div class="title-container">
+                  <h2>Android Setup</h2>
+                </div>
+                <p>
+                  Open the site on <strong>Chrome</strong>, press the
+                  <strong>“three dot”</strong> icon in the upper right to open
+                  the menu. Select <strong>“Add to Home screen”</strong> and
+                  then press the “Add” button in the popup.
+                </p>
+                <img
+                  class="img-onboarding"
+                  src="./img/android-onboarding.png"
+                  alt="android onboarding"
+                />
+              </div>
+            </div>
+
+            <div v-show="activeStep == 3">
+              <div class="step-3-container">
+                <div class="title-container">
+                  <h2>Create a spreadsheet</h2>
+                </div>
+                <p>
+                  Create a new Google Spreadsheet or copy from
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/spreadsheets/d/1zR8NCRoiVZszVN1FlqUdSk9r9jfn_h_eR3gYCgJuvqY/copy"
+                    >here</a
+                  >. Copy the spreadsheet ID/URL. Insert your name and the
+                  spreadsheet ID/URL on the login form and click on the
+                  <strong>“Sign in with Google”</strong> button.
+                </p>
+                <img
+                  class="img-onboarding"
+                  src="./img/onboarding-form.png"
+                  alt="onboarding form"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button
+                class="steps-button"
+                v-on:click="nextStep()"
+                :disabled="activeOs == null || activeStep == 3"
+              >
+                <span v-show="activeStep < 3">Next</span>
+                <span v-show="activeStep == 3">Finish!</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

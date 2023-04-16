@@ -602,15 +602,27 @@ div#mobile>div>img:last-child {
     margin-bottom: -300px;
 }
 
+
+
 .steps-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
+
+.steps-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+}
+
 
 .steps-container ul {
     display: flex;
-    width: 360px;
     justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -631,13 +643,22 @@ div#mobile>div>img:last-child {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
+    margin: 20px;
+}
+
+.steps-container ul>li:first-child {
+    margin-left: 0;
+}
+
+.steps-container ul>li:last-child {
+    margin-right: 0;
 }
 
 .steps-container ul>li:before {
     top: 50%;
     position: absolute;
     content: "";
-    width: 36px;
+    width: 20px;
     height: 1px;
     background-color: #333;
     left: 72px;
@@ -648,7 +669,7 @@ div#mobile>div>img:last-child {
     top: 50%;
     position: absolute;
     content: "";
-    width: 36px;
+    width: 20px;
     height: 1px;
     background-color: #333;
     right: 72px;
@@ -683,19 +704,86 @@ div#mobile>div>img:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+.steps-content .title-container {
+    margin: 0 0 10px 0;
+}
+
+
+.steps-button {
+    background: #333333;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 260px;
+    margin-top: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.steps-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.step-2-container>div,
+.step-3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.step-2-container p,
+.step-3-container p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+.step-2-container p strong,
+.step-3-container p strong {
+    font-weight: 600;
+}
+
+.step-3-container p a {
+    color: #38B44E;
+    font-weight: 600;
+}
+
+.os-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.img-onboarding {
+    padding: 30px;
+    max-width: 100%;
+}
 
 .card-os {
     border: 1px solid #444444;
     border-radius: 14px;
     padding: 25px;
     cursor: pointer;
-    float: left;
-}
-
-.card-os:first-child {
-    margin-right: 30px;
+    margin: 20px;
 }
 
 
@@ -870,13 +958,28 @@ div#mobile>div>img:last-child {
         flex-direction: column;
     }
 
+    .buttons-container {
+        margin-top: 20px;
+    }
+
+    a.button {
+        margin: 10px 5px 0 0;
+        min-width: auto;
+        max-width: 150px;
+    }
+
+    a.button>img {
+        margin-right: 10px;
+    }
+
+
+
     div#mobile>div {
         overflow: hidden;
     }
 
     div#description {
         align-items: flex-start;
-        padding: 10px 30px;
         flex: none;
     }
 
