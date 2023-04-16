@@ -761,6 +761,7 @@ div#mobile>div>img:last-child {
     font-weight: 600;
 }
 
+.step-2-container p a,
 .step-3-container p a {
     color: #38B44E;
     font-weight: 600;
