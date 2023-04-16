@@ -42,6 +42,8 @@ div#main {
 
 .nav>div {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #hamb-menu {
@@ -1042,7 +1044,7 @@ div#mobile>div>img:last-child {
         top: 0;
         left: 0;
         z-index: 1000;
-        padding: 100px 0 40px 0;
+        padding: 100px 0 120px 0;
         flex: 1;
         min-width: 100%;
     }
