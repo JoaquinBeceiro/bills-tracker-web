@@ -16,7 +16,7 @@ createApp({
       nextStep: function () {
         if (this.activeStep < 3) {
           this.setStep(this.activeStep + 1);
-          const onboardingElement = document.getElementById("onboarding");
+          const onboardingElement = document.getElementById("steps-list");
           onboardingElement.scrollIntoView();
         }
       },
