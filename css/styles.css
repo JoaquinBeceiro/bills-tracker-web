@@ -43,7 +43,7 @@ div#main {
 .nav>div {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
 }
 
 #hamb-menu {
@@ -1007,6 +1007,12 @@ div#mobile>div>img:last-child {
         margin-bottom: 10px;
         width: 100%;
         position: relative;
+    }
+
+    .nav>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .nav:has(#hamb-menu.open) {
