@@ -47,7 +47,6 @@ div#main {
 }
 
 #hamb-menu {
-    margin-top: 20px;
     display: none;
     width: 25px;
     height: 20px;
@@ -189,10 +188,15 @@ div#home {
     padding: 30px 60px;
     min-height: 100vh;
     background-color: #38b44e;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #38b44e;
-    background-image: url("../img/bg-chart.png"), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     background-repeat: no-repeat;
     background-position: 100% 60%;
+    background: url("../img/bg-chart.svg") no-repeat 100% 60%,
+        url("../img/bg-vector.svg") no-repeat center center / cover,
+        radial-gradient(109.91% 154.56% at -6.98% 109.81%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #38B44E, #38B44E), #333333;
+    ;
+
+
+
 }
 
 div#home .content {
@@ -1011,7 +1015,7 @@ div#mobile>div>img:last-child {
     }
 
     .nav {
-        padding: 30px;
+        padding: 20px 30px;
         margin-bottom: 10px;
         width: 100%;
         position: relative;
@@ -1021,10 +1025,19 @@ div#mobile>div>img:last-child {
         background-color: #38b44e;
     }
 
+    .nav h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav h1 img {
+        height: 30px;
+    }
+
     .nav>div {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        align-items: center;
     }
 
     .nav:has(#hamb-menu.open) {
