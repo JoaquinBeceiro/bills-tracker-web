@@ -813,6 +813,14 @@ div#mobile>div>img:last-child {
     border: none;
 }
 
+
+.steps-finish h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .steps-button:disabled {
     background-color: #aaa;
     cursor: not-allowed;

@@ -507,10 +507,13 @@
                 class="steps-button"
                 v-on:click="nextStep()"
                 :disabled="activeOs == null || activeStep == 3"
+                v-show="activeStep < 3"
               >
-                <span v-show="activeStep < 3">Next</span>
-                <span v-show="activeStep == 3">Finish!</span>
+                Next
               </button>
+              <div v-show="activeStep == 3" class="steps-finish">
+                <h3>Take control of your bills!</h3>
+              </div>
             </div>
           </div>
         </div>
