@@ -838,6 +838,10 @@ div#mobile>div>img:last-child {
     justify-content: center;
 }
 
+.step-3-container img.img-onboarding {
+    max-height: 450px;
+}
+
 
 .step-2-container p,
 .step-3-container p {
