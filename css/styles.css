@@ -190,9 +190,13 @@ div#home {
     min-height: 100vh;
     background-color: #38b44e;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), #38b44e;
-    background-image: url("../img/bg-chart.png"), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: url("../img/bg-chart.svg"), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     background-repeat: no-repeat;
     background-position: 100% 60%;
+    background: url("../img/bg-chart.svg") no-repeat 100% 60%,
+        url("../img/bg-vector.svg") no-repeat center center / cover;
+
+
 }
 
 div#home .content {
