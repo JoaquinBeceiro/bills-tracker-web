@@ -196,7 +196,7 @@
                   target="_blank"
                   class="button primary"
                 >
-                  <img src="img/logo.svg" alt="" />
+                  <img src="img/logo.svg" alt="logo" />
                   <span>Go to <strong>App webpage</strong></span>
                 </a>
                 <a
@@ -507,10 +507,13 @@
                 class="steps-button"
                 v-on:click="nextStep()"
                 :disabled="activeOs == null || activeStep == 3"
+                v-show="activeStep < 3"
               >
-                <span v-show="activeStep < 3">Next</span>
-                <span v-show="activeStep == 3">Finish!</span>
+                Next
               </button>
+              <div v-show="activeStep == 3" class="steps-finish">
+                <h3>Take control of your bills!</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -518,11 +521,11 @@
 
       <div id="footer">
         <div class="footer-top">
-          <img src="/img/footer-bg.svg" />
+          <img src="/img/footer-bg.svg" alt="footer background" />
         </div>
         <div class="footer-container">
           <div>
-            <img src="/img/logo.svg" />
+            <img src="/img/logo.svg" alt="logo" />
             <p>Bills Tracker 2022 | Montevideo, Uruguay.</p>
             <p>
               <a a href="privacy-policy.html">Term of use | Privacy policy</a>
@@ -539,7 +542,7 @@
             <h3>Want to support?</h3>
             <p>
               <a href="https://www.buymeacoffee.com/joaquinb" target="_blank">
-                <img src="/img/buymeacoffee.svg" />
+                <img src="/img/buymeacoffee.svg" alt="buy me a coffee" />
               </a>
             </p>
           </div>
