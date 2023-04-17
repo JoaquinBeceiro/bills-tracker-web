@@ -1002,7 +1002,7 @@ div#mobile>div>img:last-child {
     }
 
     div#home {
-        padding: 0;
+        padding: 90px 0 0 0;
     }
 
     div#contact .form-container {
@@ -1015,6 +1015,10 @@ div#mobile>div>img:last-child {
         margin-bottom: 10px;
         width: 100%;
         position: relative;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        background-color: #38b44e;
     }
 
     .nav>div {
