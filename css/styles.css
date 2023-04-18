@@ -24,6 +24,7 @@ div#main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 
@@ -194,14 +195,12 @@ div#home {
         url("../img/bg-vector.svg") no-repeat center center / cover,
         radial-gradient(109.91% 154.56% at -6.98% 109.81%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #38B44E, #38B44E), #333333;
     ;
-
-
-
 }
 
 div#home .content {
     display: flex;
     flex: 1;
+    height: calc(100vh - 135px);
 }
 
 div#description {
@@ -217,10 +216,6 @@ div#mobile {
     display: flex;
 }
 
-div#mobile>div {
-    position: relative;
-    flex: 1;
-}
 
 #home h2 {
     font-family: 'Roboto', sans-serif;
@@ -293,28 +288,30 @@ a.button>img {
 
 
 /* ./BUTTON */
+div#mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 div#mobile img {
-    width: 70%;
-    position: absolute;
-    max-width: 450px;
+    width: 120%;
+    max-width: 900px;
 }
 
 @media (max-width: 768px) {
+    .content {
+        overflow: hidden;
+    }
+
     div#mobile>div>img {
-        width: 60%;
+        width: 120%;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 
-div#mobile>div>img:first-child {
-    right: -60px;
-    top: -50px;
-}
-
-div#mobile>div>img:last-child {
-    right: 45px;
-    top: 20px;
-}
 
 .title-container {
     font-family: 'Roboto', sans-serif;
@@ -1107,15 +1104,6 @@ div#mobile>div>img:last-child {
         font-size: 1.2rem;
     }
 
-    div#mobile>div>img:first-child {
-        right: 0;
-        top: 0;
-    }
-
-    div#mobile>div>img:last-child {
-        right: 70px;
-        top: 80px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1137,11 +1125,6 @@ div#mobile>div>img:last-child {
         margin-right: 10px;
     }
 
-
-
-    div#mobile>div {
-        overflow: hidden;
-    }
 
     div#description {
         align-items: flex-start;
