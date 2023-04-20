@@ -1106,7 +1106,12 @@ div#mobile img {
 
 }
 
+
 @media (max-width: 768px) {
+    .cards-container {
+        padding: 0 20px;
+    }
+
     div#home .content {
         flex-direction: column;
     }
@@ -1139,6 +1144,19 @@ div#mobile img {
 
     #home h3 {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 428px) {
+    form#contact-form {
+        padding: 30px 15px;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
     }
 }
 
