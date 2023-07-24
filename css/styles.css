@@ -165,6 +165,7 @@ h1 img {
     font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav>ul.links>li:last-child>a {
