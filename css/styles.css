@@ -201,6 +201,7 @@ div#home .content {
   display: flex;
   flex: 1;
   height: calc(100vh - 135px);
+  padding: 0 10%;
 }
 
 div#description {
@@ -353,6 +354,9 @@ div#mobile img {
   background-position: 100% 90%;
   padding-bottom: 55px;
   margin-bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ./HOW IT WORKS */
@@ -365,14 +369,14 @@ div#mobile img {
   background-repeat: no-repeat;
   background-position: bottom;
   position: relative;
-  padding: 100px 0;
+  padding: 100px 10%;
   height: 100%;
   background-size: cover;
 }
 
 .about-content {
   display: flex;
-  padding: 0 150px;
+  padding: 0;
   padding-top: 10px;
 }
 
@@ -402,8 +406,20 @@ div#mobile img {
   justify-content: space-between;
 }
 
+.about-content .description > div > p:last-child {
+  margin-top: 40px;
+}
+
 .about-content .description strong {
   font-weight: 500;
+}
+
+.about-content .description a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
 }
 
 .about-content .description p.join-the-team {
@@ -417,10 +433,6 @@ div#mobile img {
   text-decoration: none;
   position: relative;
   white-space: nowrap;
-}
-
-.about-content .description p.join-the-team a:hover {
-  font-weight: 900;
 }
 
 .about-content .description p.join-the-team a:hover::before {
@@ -597,7 +609,8 @@ div#mobile img {
 .cards-container {
   display: flex;
   justify-content: space-around;
-  padding: 0 100px;
+  max-width: 1536px;
+  width: 100%;
 }
 
 .cards-container .card {
@@ -1098,6 +1111,7 @@ div#mobile img {
 
   div#home .content {
     flex-direction: column;
+    padding: 0;
   }
 
   .buttons-container {
@@ -1132,7 +1146,7 @@ div#mobile img {
 
 @media (max-width: 428px) {
   form#contact-form {
-    padding: 30px 15px;
+    padding: 30px;
   }
 
   .g-recaptcha {
