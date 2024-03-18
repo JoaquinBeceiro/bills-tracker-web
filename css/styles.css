@@ -309,6 +309,10 @@ div#mobile img {
 }
 
 @media (max-width: 768px) {
+  div#home .content {
+    height: calc(100dvh - 90px);
+  }
+
   .content {
     overflow: hidden;
   }
@@ -316,7 +320,7 @@ div#mobile img {
   div#mobile > div > img {
     width: 110%;
     margin-left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-10%);
   }
 }
 
