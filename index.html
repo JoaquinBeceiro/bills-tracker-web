@@ -145,75 +145,80 @@
   <body>
     <div id="main">
       <div id="home">
-        <div class="nav">
-          <div>
-            <h1><img src="img/logo.svg" alt="logo" /> Bills Tracker</h1>
-            <div
-              v-on:click="toggleMenu()"
-              id="hamb-menu"
-              :class="{ open:isMenuOpen }"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <ul class="links" :class="{ open:isMenuOpen }">
-            <li>
-              <a v-on:click="toggleMenu(true)" href="#how-it-works" class="link"
-                >How it works</a
-              >
-            </li>
-            <li>
-              <a
-                v-on:click="toggleMenu(true)"
-                href="#about-project"
-                class="link"
-                >About Project</a
-              >
-            </li>
-            <li>
-              <a v-on:click="toggleMenu(true)" href="#contact" class="link"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a v-on:click="toggleMenu(true)" href="#onboarding" class="link"
-                >Onboarding</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="content">
-          <div id="description">
-            <h2>Take control of your bills</h2>
-            <h3>
-              Track and share expenses with Google Drive spreadsheet.
-              <div class="buttons-container">
-                <a
-                  href="https://pwa.billstracker.app"
-                  target="_blank"
-                  class="button primary"
-                >
-                  <img src="img/logo.svg" alt="logo" />
-                  <span>Go to <strong>App webpage</strong></span>
-                </a>
-                <a
-                  href="https://github.com/JoaquinBeceiro/bills-tracker"
-                  target="_blank"
-                  class="button secondary"
-                >
-                  <img src="img/github.svg" alt="" />
-                  <span>Go to <strong>GitHub project</strong></span>
-                </a>
-              </div>
-            </h3>
-          </div>
-
-          <div id="mobile">
+        <div class="content-limit">
+          <div class="nav">
             <div>
-              <img src="./img/phones-home.png" alt="app screenshots" />
+              <h1><img src="img/logo.svg" alt="logo" /> Bills Tracker</h1>
+              <div
+                v-on:click="toggleMenu()"
+                id="hamb-menu"
+                :class="{ open:isMenuOpen }"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <ul class="links" :class="{ open:isMenuOpen }">
+              <li>
+                <a
+                  v-on:click="toggleMenu(true)"
+                  href="#how-it-works"
+                  class="link"
+                  >How it works</a
+                >
+              </li>
+              <li>
+                <a
+                  v-on:click="toggleMenu(true)"
+                  href="#about-project"
+                  class="link"
+                  >About Project</a
+                >
+              </li>
+              <li>
+                <a v-on:click="toggleMenu(true)" href="#contact" class="link"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a v-on:click="toggleMenu(true)" href="#onboarding" class="link"
+                  >Onboarding</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <div id="description">
+              <h2>Take control of your bills</h2>
+              <h3>
+                Track and share expenses with Google Drive spreadsheet.
+                <div class="buttons-container">
+                  <a
+                    href="https://pwa.billstracker.app"
+                    target="_blank"
+                    class="button primary"
+                  >
+                    <img src="img/logo.svg" alt="logo" />
+                    <span>Go to <strong>App webpage</strong></span>
+                  </a>
+                  <a
+                    href="https://github.com/JoaquinBeceiro/bills-tracker"
+                    target="_blank"
+                    class="button secondary"
+                  >
+                    <img src="img/github.svg" alt="" />
+                    <span>Go to <strong>GitHub project</strong></span>
+                  </a>
+                </div>
+              </h3>
+            </div>
+
+            <div id="mobile">
+              <div>
+                <img src="./img/phones-home.png" alt="app screenshots" />
+              </div>
             </div>
           </div>
         </div>
@@ -269,258 +274,264 @@
       </div>
 
       <div id="about-project">
-        <div class="title-container title-container-white">
-          <h2>About Project</h2>
-          <h3>Collaborative, Open Source & Free</h3>
-        </div>
+        <div class="content-limit">
+          <div class="title-container title-container-white">
+            <h2>About Project</h2>
+            <h3>Collaborative, Open Source & Free</h3>
+          </div>
 
-        <div class="about-content">
-          <div><img src="/img/logo.svg" /></div>
-          <div class="description">
-            <div>
-              <p>
-                <strong>Bills Tracker</strong> arises from the need to have an
-                expense control where the only owner of the data is the final
-                user, without third parties involved.
-              </p>
+          <div class="about-content">
+            <div><img src="/img/logo.svg" /></div>
+            <div class="description">
+              <div>
+                <p>
+                  <strong>Bills Tracker</strong> arises from the need to have an
+                  expense control where the only owner of the data is the final
+                  user, without third parties involved.
+                </p>
 
-              <p>
-                You can read the complete story on
-                <a
-                  href="https://medium.com/@joaquinbeceiro/registro-y-control-de-finanzas-personales-d69ebc198bd1"
-                  >Medium</a
-                >.
+                <p>
+                  You can read the complete story on
+                  <a
+                    href="https://medium.com/@joaquinbeceiro/registro-y-control-de-finanzas-personales-d69ebc198bd1"
+                    >Medium</a
+                  >.
+                </p>
+                <p><strong>We love to hear your feedback.</strong></p>
+              </div>
+              <p class="join-the-team">
+                If you like the project,
+                <a href="https://github.com/JoaquinBeceiro/bills-tracker"
+                  >join the team!</a
+                >
               </p>
-              <p><strong>We love to hear your feedback.</strong></p>
             </div>
-            <p class="join-the-team">
-              If you like the project,
-              <a href="https://github.com/JoaquinBeceiro/bills-tracker"
-                >join the team!</a
-              >
-            </p>
           </div>
         </div>
       </div>
 
       <div id="contact">
-        <div class="title-container title-container-white">
-          <h2>Contact</h2>
-          <h3>Want to colaborate?</h3>
-        </div>
+        <div class="content-limit">
+          <div class="title-container title-container-white">
+            <h2>Contact</h2>
+            <h3>Want to colaborate?</h3>
+          </div>
 
-        <div class="form-container">
-          <form
-            action="https://formspree.io/f/mayeerpo"
-            method="post"
-            id="contact-form"
-          >
-            <h3>Let's talk!</h3>
-            <div class="input-container">
-              <label for="form-full-name">Full name*</label>
-              <input
-                type="text"
-                id="form-full-name"
-                placeholder="John Doe"
-                required
-                name="full-name"
-              />
-            </div>
+          <div class="form-container">
+            <form
+              action="https://formspree.io/f/mayeerpo"
+              method="post"
+              id="contact-form"
+            >
+              <h3>Let's talk!</h3>
+              <div class="input-container">
+                <label for="form-full-name">Full name*</label>
+                <input
+                  type="text"
+                  id="form-full-name"
+                  placeholder="John Doe"
+                  required
+                  name="full-name"
+                />
+              </div>
 
-            <div class="input-container">
-              <label for="form-email">Email*</label>
-              <input
-                type="email"
-                id="form-email"
-                placeholder="johndoe@billstracker.app"
-                required
-                name="email"
-              />
-            </div>
+              <div class="input-container">
+                <label for="form-email">Email*</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  placeholder="johndoe@billstracker.app"
+                  required
+                  name="email"
+                />
+              </div>
 
-            <div class="textarea-container">
-              <label for="form-message">Message</label>
-              <textarea
-                id="form-message"
-                placeholder="Your message here"
-                required
-                name="message"
-              ></textarea>
-            </div>
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LfQOiclAAAAAClCZOMBaMUvZheJmBYDUP_5sX8S"
-            ></div>
-            <button type="submit">Send</button>
-            <span id="form-status"></span>
-          </form>
+              <div class="textarea-container">
+                <label for="form-message">Message</label>
+                <textarea
+                  id="form-message"
+                  placeholder="Your message here"
+                  required
+                  name="message"
+                ></textarea>
+              </div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LfQOiclAAAAAClCZOMBaMUvZheJmBYDUP_5sX8S"
+              ></div>
+              <button type="submit">Send</button>
+              <span id="form-status"></span>
+            </form>
+          </div>
         </div>
       </div>
 
       <div id="onboarding">
-        <div class="title-container">
-          <h2>Onboarding</h2>
-          <h3>One time, forever</h3>
-        </div>
+        <div class="content-limit">
+          <div class="title-container">
+            <h2>Onboarding</h2>
+            <h3>One time, forever</h3>
+          </div>
 
-        <div class="steps-container">
-          <ul id="steps-list">
-            <li v-on:click="setStep(1)" :class="{ active:activeStep >= 1 }">
-              1
-            </li>
-            <li v-on:click="setStep(2)" :class="{ active:activeStep >= 2 }">
-              2
-            </li>
-            <li v-on:click="setStep(3)" :class="{ active:activeStep >= 3 }">
-              3
-            </li>
-          </ul>
+          <div class="steps-container">
+            <ul id="steps-list">
+              <li v-on:click="setStep(1)" :class="{ active:activeStep >= 1 }">
+                1
+              </li>
+              <li v-on:click="setStep(2)" :class="{ active:activeStep >= 2 }">
+                2
+              </li>
+              <li v-on:click="setStep(3)" :class="{ active:activeStep >= 3 }">
+                3
+              </li>
+            </ul>
 
-          <div class="steps-content">
-            <div v-show="activeStep == 1">
-              <div class="title-container">
-                <h2>Select your OS</h2>
-              </div>
-              <div class="os-cards-container">
-                <div
-                  v-on:click="setActiveOs('android')"
-                  :class="{ active:activeOs == 'android' }"
-                  class="card-os"
-                >
-                  <div class="icon">
-                    <svg
-                      width="50"
-                      height="59"
-                      viewBox="0 0 50 59"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.09091 42.4634C9.09091 44.9628 11.1364 47.0079 13.6364 47.0079H15.1515V54.582C15.1515 56.6732 16.847 58.3691 18.9394 58.3691C21.0318 58.3691 22.7273 56.6732 22.7273 54.582V47.0079H27.2727V54.582C27.2727 56.6732 28.9682 58.3691 31.0606 58.3691C33.153 58.3691 34.8485 56.6732 34.8485 54.582V47.0079H36.3636C38.8636 47.0079 40.9091 44.9628 40.9091 42.4634V19.7409H9.09091V42.4634Z"
-                        fill="#444444"
-                      />
-                      <path
-                        d="M46.2121 18.9835C44.1197 18.9835 42.4242 20.6793 42.4242 22.7706V37.9189C42.4242 40.0101 44.1197 41.706 46.2121 41.706C48.3045 41.706 50 40.0101 50 37.9189V22.7706C50 20.6793 48.3045 18.9835 46.2121 18.9835Z"
-                        fill="#444444"
-                      />
-                      <path
-                        d="M3.78788 18.9835C1.69545 18.9835 0 20.6793 0 22.7706V37.9189C0 40.0101 1.69545 41.706 3.78788 41.706C5.8803 41.706 7.57576 40.0101 7.57576 37.9189V22.7706C7.57576 20.6793 5.8803 18.9835 3.78788 18.9835Z"
-                        fill="#444444"
-                      />
-                      <path
-                        d="M33.6106 4.86374L35.6553 1.12135C35.8561 0.754 35.7205 0.294248 35.3538 0.0935332C34.9871 -0.107182 34.5258 0.0276385 34.3258 0.394985L32.2992 4.10329C30.1114 2.9702 27.6341 2.32034 25 2.32034C22.3659 2.32034 19.8886 2.9702 17.7008 4.10329L15.6742 0.394985C15.4727 0.028396 15.0129 -0.108697 14.6462 0.0935332C14.2795 0.294248 14.1439 0.754 14.3447 1.12135L16.3894 4.86374C12.0023 7.69571 9.09091 12.6166 9.09091 18.2261H40.9091C40.9091 12.6166 37.9977 7.69571 33.6106 4.86374ZM18.1818 12.9242C17.3455 12.9242 16.6667 12.2455 16.6667 11.4093C16.6667 10.5731 17.3455 9.89449 18.1818 9.89449C19.0182 9.89449 19.697 10.5731 19.697 11.4093C19.697 12.2455 19.0182 12.9242 18.1818 12.9242ZM31.8182 12.9242C30.9818 12.9242 30.303 12.2455 30.303 11.4093C30.303 10.5731 30.9818 9.89449 31.8182 9.89449C32.6545 9.89449 33.3333 10.5731 33.3333 11.4093C33.3333 12.2455 32.6545 12.9242 31.8182 12.9242Z"
-                        fill="#444444"
-                      />
-                    </svg>
+            <div class="steps-content">
+              <div v-show="activeStep == 1">
+                <div class="title-container">
+                  <h2>Select your OS</h2>
+                </div>
+                <div class="os-cards-container">
+                  <div
+                    v-on:click="setActiveOs('android')"
+                    :class="{ active:activeOs == 'android' }"
+                    class="card-os"
+                  >
+                    <div class="icon">
+                      <svg
+                        width="50"
+                        height="59"
+                        viewBox="0 0 50 59"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.09091 42.4634C9.09091 44.9628 11.1364 47.0079 13.6364 47.0079H15.1515V54.582C15.1515 56.6732 16.847 58.3691 18.9394 58.3691C21.0318 58.3691 22.7273 56.6732 22.7273 54.582V47.0079H27.2727V54.582C27.2727 56.6732 28.9682 58.3691 31.0606 58.3691C33.153 58.3691 34.8485 56.6732 34.8485 54.582V47.0079H36.3636C38.8636 47.0079 40.9091 44.9628 40.9091 42.4634V19.7409H9.09091V42.4634Z"
+                          fill="#444444"
+                        />
+                        <path
+                          d="M46.2121 18.9835C44.1197 18.9835 42.4242 20.6793 42.4242 22.7706V37.9189C42.4242 40.0101 44.1197 41.706 46.2121 41.706C48.3045 41.706 50 40.0101 50 37.9189V22.7706C50 20.6793 48.3045 18.9835 46.2121 18.9835Z"
+                          fill="#444444"
+                        />
+                        <path
+                          d="M3.78788 18.9835C1.69545 18.9835 0 20.6793 0 22.7706V37.9189C0 40.0101 1.69545 41.706 3.78788 41.706C5.8803 41.706 7.57576 40.0101 7.57576 37.9189V22.7706C7.57576 20.6793 5.8803 18.9835 3.78788 18.9835Z"
+                          fill="#444444"
+                        />
+                        <path
+                          d="M33.6106 4.86374L35.6553 1.12135C35.8561 0.754 35.7205 0.294248 35.3538 0.0935332C34.9871 -0.107182 34.5258 0.0276385 34.3258 0.394985L32.2992 4.10329C30.1114 2.9702 27.6341 2.32034 25 2.32034C22.3659 2.32034 19.8886 2.9702 17.7008 4.10329L15.6742 0.394985C15.4727 0.028396 15.0129 -0.108697 14.6462 0.0935332C14.2795 0.294248 14.1439 0.754 14.3447 1.12135L16.3894 4.86374C12.0023 7.69571 9.09091 12.6166 9.09091 18.2261H40.9091C40.9091 12.6166 37.9977 7.69571 33.6106 4.86374ZM18.1818 12.9242C17.3455 12.9242 16.6667 12.2455 16.6667 11.4093C16.6667 10.5731 17.3455 9.89449 18.1818 9.89449C19.0182 9.89449 19.697 10.5731 19.697 11.4093C19.697 12.2455 19.0182 12.9242 18.1818 12.9242ZM31.8182 12.9242C30.9818 12.9242 30.303 12.2455 30.303 11.4093C30.303 10.5731 30.9818 9.89449 31.8182 9.89449C32.6545 9.89449 33.3333 10.5731 33.3333 11.4093C33.3333 12.2455 32.6545 12.9242 31.8182 12.9242Z"
+                          fill="#444444"
+                        />
+                      </svg>
+                    </div>
+                    <h3>Android</h3>
+                    <p>Onboarding on android phone</p>
                   </div>
-                  <h3>Android</h3>
-                  <p>Onboarding on android phone</p>
-                </div>
-                <div
-                  v-on:click="setActiveOs('ios')"
-                  :class="{ active:activeOs == 'ios' }"
-                  class="card-os"
-                >
-                  <div class="icon">
-                    <svg
-                      width="50"
-                      height="62"
-                      viewBox="0 0 50 62"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M48.4031 20.9299C48.0469 21.2062 41.7578 24.7487 41.7578 32.6258C41.7578 41.737 49.7605 44.9603 50 45.0401C49.9631 45.2365 48.7287 49.4544 45.7806 53.7522C43.1519 57.5342 40.4066 61.31 36.2302 61.31C32.0538 61.31 30.979 58.8849 26.1577 58.8849C21.4593 58.8849 19.7887 61.3898 15.9686 61.3898C12.1484 61.3898 9.48286 57.8903 6.41813 53.5925C2.8682 48.5458 0 40.7055 0 33.2643C0 21.329 7.76317 14.999 15.4035 14.999C19.4632 14.999 22.8473 17.6636 25.3961 17.6636C27.8221 17.6636 31.6055 14.8394 36.2241 14.8394C37.9744 14.8394 44.2636 14.999 48.4031 20.9299ZM34.0314 9.78652C35.9415 7.52101 37.2927 4.37753 37.2927 1.23406C37.2927 0.798148 37.2559 0.356097 37.176 0C34.0683 0.116652 30.371 2.06904 28.1415 4.65381C26.3911 6.64304 24.7574 9.78652 24.7574 12.973C24.7574 13.4519 24.8372 13.9307 24.8741 14.0842C25.0706 14.1211 25.39 14.164 25.7094 14.164C28.4977 14.164 32.0047 12.2976 34.0314 9.78652Z"
-                        fill="#333333"
-                      />
-                    </svg>
+                  <div
+                    v-on:click="setActiveOs('ios')"
+                    :class="{ active:activeOs == 'ios' }"
+                    class="card-os"
+                  >
+                    <div class="icon">
+                      <svg
+                        width="50"
+                        height="62"
+                        viewBox="0 0 50 62"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M48.4031 20.9299C48.0469 21.2062 41.7578 24.7487 41.7578 32.6258C41.7578 41.737 49.7605 44.9603 50 45.0401C49.9631 45.2365 48.7287 49.4544 45.7806 53.7522C43.1519 57.5342 40.4066 61.31 36.2302 61.31C32.0538 61.31 30.979 58.8849 26.1577 58.8849C21.4593 58.8849 19.7887 61.3898 15.9686 61.3898C12.1484 61.3898 9.48286 57.8903 6.41813 53.5925C2.8682 48.5458 0 40.7055 0 33.2643C0 21.329 7.76317 14.999 15.4035 14.999C19.4632 14.999 22.8473 17.6636 25.3961 17.6636C27.8221 17.6636 31.6055 14.8394 36.2241 14.8394C37.9744 14.8394 44.2636 14.999 48.4031 20.9299ZM34.0314 9.78652C35.9415 7.52101 37.2927 4.37753 37.2927 1.23406C37.2927 0.798148 37.2559 0.356097 37.176 0C34.0683 0.116652 30.371 2.06904 28.1415 4.65381C26.3911 6.64304 24.7574 9.78652 24.7574 12.973C24.7574 13.4519 24.8372 13.9307 24.8741 14.0842C25.0706 14.1211 25.39 14.164 25.7094 14.164C28.4977 14.164 32.0047 12.2976 34.0314 9.78652Z"
+                          fill="#333333"
+                        />
+                      </svg>
+                    </div>
+                    <h3>iOS</h3>
+                    <p>Onboarding on iPhone</p>
                   </div>
-                  <h3>iOS</h3>
-                  <p>Onboarding on iPhone</p>
                 </div>
               </div>
-            </div>
-            <div class="step-2-container" v-show="activeStep == 2">
-              <div v-show="activeOs =='ios'">
-                <div class="title-container">
-                  <h2>iOS Setup</h2>
+              <div class="step-2-container" v-show="activeStep == 2">
+                <div v-show="activeOs =='ios'">
+                  <div class="title-container">
+                    <h2>iOS Setup</h2>
+                  </div>
+                  <p>
+                    Open the site (<a
+                      href="https://pwa.billstracker.app"
+                      target="_blank"
+                      >pwa.billstracker.app</a
+                    >) on <strong>Safari</strong>, click on the
+                    <strong>Share</strong> <img src="./img/share.png" /> button
+                    and select <strong>“Add to Home Screen”</strong> from the
+                    popup. Lastly, tap "Add" <img src="./img/add.png" /> in the
+                    top right corner.
+                  </p>
+                  <img
+                    class="img-onboarding"
+                    src="./img/ios-onboarding.png"
+                    alt="ios onboarding"
+                  />
                 </div>
-                <p>
-                  Open the site (<a
-                    href="https://pwa.billstracker.app"
-                    target="_blank"
-                    >pwa.billstracker.app</a
-                  >) on <strong>Safari</strong>, click on the
-                  <strong>Share</strong> <img src="./img/share.png" /> button
-                  and select <strong>“Add to Home Screen”</strong> from the
-                  popup. Lastly, tap "Add" <img src="./img/add.png" /> in the
-                  top right corner.
-                </p>
-                <img
-                  class="img-onboarding"
-                  src="./img/ios-onboarding.png"
-                  alt="ios onboarding"
-                />
               </div>
-            </div>
 
-            <div class="step-2-container" v-show="activeStep == 2">
-              <div v-show="activeOs =='android'">
-                <div class="title-container">
-                  <h2>Android Setup</h2>
+              <div class="step-2-container" v-show="activeStep == 2">
+                <div v-show="activeOs =='android'">
+                  <div class="title-container">
+                    <h2>Android Setup</h2>
+                  </div>
+                  <p>
+                    Open the site (<a
+                      href="https://pwa.billstracker.app"
+                      target="_blank"
+                      >pwa.billstracker.app</a
+                    >) on <strong>Chrome</strong>, press the
+                    <strong>“three dot”</strong> icon in the upper right to open
+                    the menu. Select <strong>“Add to Home screen”</strong> and
+                    then press the “Add” button in the popup.
+                  </p>
+                  <img
+                    class="img-onboarding"
+                    src="./img/android-onboarding.png"
+                    alt="android onboarding"
+                  />
                 </div>
-                <p>
-                  Open the site (<a
-                    href="https://pwa.billstracker.app"
-                    target="_blank"
-                    >pwa.billstracker.app</a
-                  >) on <strong>Chrome</strong>, press the
-                  <strong>“three dot”</strong> icon in the upper right to open
-                  the menu. Select <strong>“Add to Home screen”</strong> and
-                  then press the “Add” button in the popup.
-                </p>
-                <img
-                  class="img-onboarding"
-                  src="./img/android-onboarding.png"
-                  alt="android onboarding"
-                />
               </div>
-            </div>
 
-            <div v-show="activeStep == 3">
-              <div class="step-3-container">
-                <div class="title-container">
-                  <h2>Create a spreadsheet</h2>
+              <div v-show="activeStep == 3">
+                <div class="step-3-container">
+                  <div class="title-container">
+                    <h2>Create a spreadsheet</h2>
+                  </div>
+                  <p>
+                    Create a new Google Spreadsheet on the app or copy from
+                    <a
+                      target="_blank"
+                      href="https://docs.google.com/spreadsheets/d/1zR8NCRoiVZszVN1FlqUdSk9r9jfn_h_eR3gYCgJuvqY/copy"
+                      >here</a
+                    >. Copy the spreadsheet ID/URL. Insert your name and the
+                    spreadsheet ID/URL on the login form and click on the
+                    <strong>“Sign in with Google”</strong> button.
+                  </p>
+                  <img
+                    class="img-onboarding"
+                    src="./img/onboarding-screenshot.png"
+                    alt="onboarding form"
+                  />
                 </div>
-                <p>
-                  Create a new Google Spreadsheet on the app or copy from
-                  <a
-                    target="_blank"
-                    href="https://docs.google.com/spreadsheets/d/1zR8NCRoiVZszVN1FlqUdSk9r9jfn_h_eR3gYCgJuvqY/copy"
-                    >here</a
-                  >. Copy the spreadsheet ID/URL. Insert your name and the
-                  spreadsheet ID/URL on the login form and click on the
-                  <strong>“Sign in with Google”</strong> button.
-                </p>
-                <img
-                  class="img-onboarding"
-                  src="./img/onboarding-screenshot.png"
-                  alt="onboarding form"
-                />
               </div>
-            </div>
 
-            <div>
-              <button
-                class="steps-button"
-                v-on:click="nextStep()"
-                :disabled="activeOs == null || activeStep == 3"
-                v-show="activeStep < 3"
-              >
-                Next
-              </button>
-              <div v-show="activeStep == 3" class="steps-finish">
-                <h3>Take control of your bills!</h3>
+              <div>
+                <button
+                  class="steps-button"
+                  v-on:click="nextStep()"
+                  :disabled="activeOs == null || activeStep == 3"
+                  v-show="activeStep < 3"
+                >
+                  Next
+                </button>
+                <div v-show="activeStep == 3" class="steps-finish">
+                  <h3>Take control of your bills!</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -532,62 +543,64 @@
           <img src="/img/footer-bg.svg" alt="footer background" />
         </div>
         <div class="footer-container">
-          <div>
-            <img src="/img/logo.svg" alt="logo" />
-            <p>Bills Tracker 2022 | Montevideo, Uruguay.</p>
-            <p>
-              <a a href="privacy-policy.html">Term of use | Privacy policy</a>
-            </p>
-          </div>
-          <div>
-            <h3>About</h3>
-            <p>
-              BillsTracker is a PWA built on React that communicates with the
-              Google Spreadsheet APIs to save and read information. The project
-              is frontend only and the credentials are stored in the user's
-              local storage.
-            </p>
-            <h3>Want to support?</h3>
-            <p>
-              <a href="https://www.buymeacoffee.com/joaquinb" target="_blank">
-                <img src="/img/buymeacoffee.svg" alt="buy me a coffee" />
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://cafecito.app/joaquinbeceiro"
-                rel="noopener"
-                target="_blank"
-                ><img
-                  srcset="
-                    https://cdn.cafecito.app/imgs/buttons/button_5.png       1x,
-                    https://cdn.cafecito.app/imgs/buttons/button_5_2x.png    2x,
-                    https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x
-                  "
-                  src="https://cdn.cafecito.app/imgs/buttons/button_5.png"
-                  alt="Invitame un café en cafecito.app"
-              /></a>
-            </p>
-          </div>
-          <div>
-            <h3>Keep in touch</h3>
-            <p>Questions or feedback? We'd love to hear from you</p>
-            <div class="footer-links">
-              <a href="https://github.com/JoaquinBeceiro" target="_blank">
-                <img src="img/github.svg" alt="Github logo" />
-              </a>
-              <a
-                href="https://www.figma.com/file/86OT1s4OeoIg8DXQ9yqHew/Bills-tracker?node-id=1%3A5&t=uqrfooAWMn19Mmwm-1"
-                target="_blank"
-              >
-                <img src="img/figma.svg" alt="Figma logo" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/joaquinbeceiro"
-                target="_blank"
-              >
-                <img src="img/linkedin.svg" alt="Linkedin logo" />
-              </a>
+          <div class="content-limit">
+            <div>
+              <img src="/img/logo.svg" alt="logo" />
+              <p>Bills Tracker 2022 | Montevideo, Uruguay.</p>
+              <p>
+                <a a href="privacy-policy.html">Term of use | Privacy policy</a>
+              </p>
+            </div>
+            <div>
+              <h3>About</h3>
+              <p>
+                BillsTracker is a PWA built on React that communicates with the
+                Google Spreadsheet APIs to save and read information. The
+                project is frontend only and the credentials are stored in the
+                user's local storage.
+              </p>
+              <h3>Want to support?</h3>
+              <p>
+                <a href="https://www.buymeacoffee.com/joaquinb" target="_blank">
+                  <img src="/img/buymeacoffee.svg" alt="buy me a coffee" />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://cafecito.app/joaquinbeceiro"
+                  rel="noopener"
+                  target="_blank"
+                  ><img
+                    srcset="
+                      https://cdn.cafecito.app/imgs/buttons/button_5.png       1x,
+                      https://cdn.cafecito.app/imgs/buttons/button_5_2x.png    2x,
+                      https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x
+                    "
+                    src="https://cdn.cafecito.app/imgs/buttons/button_5.png"
+                    alt="Invitame un café en cafecito.app"
+                /></a>
+              </p>
+            </div>
+            <div>
+              <h3>Keep in touch</h3>
+              <p>Questions or feedback? We'd love to hear from you</p>
+              <div class="footer-links">
+                <a href="https://github.com/JoaquinBeceiro" target="_blank">
+                  <img src="img/github.svg" alt="Github logo" />
+                </a>
+                <a
+                  href="https://www.figma.com/file/86OT1s4OeoIg8DXQ9yqHew/Bills-tracker?node-id=1%3A5&t=uqrfooAWMn19Mmwm-1"
+                  target="_blank"
+                >
+                  <img src="img/figma.svg" alt="Figma logo" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joaquinbeceiro"
+                  target="_blank"
+                >
+                  <img src="img/linkedin.svg" alt="Linkedin logo" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

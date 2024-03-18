@@ -25,6 +25,7 @@ div#main {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  align-items: center;
 }
 
 /* NAV */
@@ -177,9 +178,15 @@ h1 img {
 
 /* ./NAV */
 
+.content-limit {
+  width: 100%;
+  max-width: 1400px;
+}
+
 div#home {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex: 1;
   width: 100%;
   padding: 30px 60px;
@@ -201,7 +208,6 @@ div#home .content {
   display: flex;
   flex: 1;
   height: calc(100vh - 135px);
-  padding: 0 10%;
 }
 
 div#description {
@@ -342,6 +348,8 @@ div#mobile img {
 /* HOW IT WORKS */
 
 #how-it-works {
+  width: 100%;
+  padding: 30px;
   background: #dedede;
   background-image: url("../img/bg-chart2.png");
   background-image: url("../img/bg-chart2.png"),
@@ -364,6 +372,9 @@ div#mobile img {
 /* ABOUT PROJECT */
 
 #about-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: #38b44e;
   background-image: url("../img/about-bg.svg");
   background-repeat: no-repeat;
@@ -483,6 +494,10 @@ div#mobile img {
 /* ACONTACT */
 
 #contact {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
   background-image: url("/img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -499,7 +514,7 @@ div#mobile img {
   width: 436px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 #contact form h3 {
@@ -691,6 +706,9 @@ div#mobile img {
 /* ONBOARDING */
 
 #onboarding {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   padding-bottom: 300px;
   margin-bottom: -300px;
@@ -920,6 +938,7 @@ div#mobile img {
 /* FOOTER */
 
 #footer {
+  width: 100%;
   padding: 0;
   font-family: "Roboto";
   font-weight: 300;
@@ -949,6 +968,11 @@ div#mobile img {
   justify-content: space-between;
   gap: 100px;
   z-index: 100;
+  justify-content: center;
+}
+
+#footer > .footer-container .content-limit {
+  display: flex;
 }
 
 #footer > .footer-container h3 {
@@ -959,21 +983,21 @@ div#mobile img {
   margin: 10px 0;
 }
 
-#footer > .footer-container > div:first-child {
+#footer > .footer-container .content-limit > div:first-child {
   flex: 1;
 }
 
-#footer > .footer-container > div:nth-child(2) {
+#footer > .footer-container .content-limit > div:nth-child(2) {
   margin-top: 30px;
   flex: 2;
 }
 
-#footer > .footer-container > div:last-child {
+#footer > .footer-container .content-limit > div:last-child {
   margin-top: 30px;
   flex: 1;
 }
 
-#footer > .footer-container > div:first-child img {
+#footer > .footer-container .content-limit > div:first-child img {
   width: 100px;
   margin-bottom: 30px;
 }
@@ -986,7 +1010,7 @@ div#mobile img {
 }
 
 @media (max-width: 768px) {
-  #footer > .footer-container {
+  #footer > .footer-container .content-limit {
     flex-direction: column;
     gap: 0px;
   }
