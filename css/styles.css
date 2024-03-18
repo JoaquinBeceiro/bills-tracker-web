@@ -304,7 +304,7 @@ div#mobile {
 }
 
 div#mobile img {
-  width: 120%;
+  width: 110%;
   max-width: 900px;
 }
 
@@ -314,7 +314,7 @@ div#mobile img {
   }
 
   div#mobile > div > img {
-    width: 120%;
+    width: 110%;
     margin-left: 50%;
     transform: translateX(-50%);
   }
